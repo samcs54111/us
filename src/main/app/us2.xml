@@ -19,6 +19,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
         <catch-exception-strategy doc:name="Catch Exception Strategy">
             <set-payload value="url not available" doc:name="Set Payload"/>
             <logger message="#[payload]" level="INFO" doc:name="Logger"/>
+			<logger message="#[payload]" level="INFO" doc:name="LoggerDetails"/>
         </catch-exception-strategy>
     </flow>
 </mule>
